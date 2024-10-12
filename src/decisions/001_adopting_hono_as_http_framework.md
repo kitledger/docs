@@ -1,38 +1,33 @@
-## Adopting Hono JS as the HTTP Framework
+## Adopting Laravel as the Web Framework
 
 **Author:** Alejandro Barrera Aponte <abarreraaponte@icloud.com>
-**Date:** 2024-09-19
-**Title:** Adopting Hono JS as the HTTP Framework
-
+**Date:** 2024-10-12
+**Title:** Adopting Laravel as the Web Framework
 **Summary:**
-
-This document outlines the decision to use Hono JS as the HTTP framework for the project.
+This document outlines the decision to use Laravel as the web framework for the project, replacing the previously chosen Hono JS.
 
 **Description:**
+After initial consideration of Hono JS, the project requirements were re-evaluated, leading to the selection of Laravel as the primary web framework. Laravel, coupled with PHP, emerged as the most suitable choice due to the following advantages:
 
-The project required a lightweight, high-performance, and flexible HTTP framework to handle incoming requests and generate responses. After careful evaluation, Hono JS emerged as the most suitable choice due to its following advantages:
-
-* **Minimalist and Efficient:** Hono JS is designed to be lean and efficient, focusing on providing the core features needed for building HTTP applications without unnecessary overhead.
-* **Flexibility and Customization:** Hono JS offers a high degree of flexibility, allowing developers to customize and extend its functionality to suit their specific needs.
-* **Modern JavaScript Features:** Hono JS leverages modern JavaScript features like async/await and promises, making it easy to write clean and asynchronous code.
-* **Wide Compatibility:** Hono JS can run in most modern JavaScript runtimes, including Node.js, Deno, and Edge runtimes, providing flexibility in deployment options. It uses standard Fetch Request and Response objects, which guarantees ample documentation and integration possibilities.
-* **Active Community and Support:** Hono JS has a growing community and active development, ensuring ongoing support and updates.
+* **Rapid Development:** Laravel provides a robust set of tools and features that allow for faster development of complex web applications.
+* **Modern PHP:** Contrary to outdated perceptions, modern PHP is performant and solid. The language has evolved significantly and the ecosystem is filled with high quality packages that can be leveraged.
+* **Comprehensive Ecosystem:** Laravel offers a rich ecosystem of tools and packages, enabling rapid implementation of common web application features.
+* **Active Community and Support:** Laravel has a large, active community and extensive documentation, ensuring ongoing support and resources.
+* **Elegant Syntax:** Laravel is known for its expressive, elegant syntax, which can lead to more readable and maintainable code.
+* **Built-in Features:** Laravel includes many built-in features like authentication, routing, sessions, and caching, reducing the need for third-party packages.
 
 **Alternatives Considered:**
-
-* **Express.js:** A popular choice, but considered to be more somewhat stale and less focused on modern JavaScript features.
-* **Fastify:** Known for its performance, this would have been a solid choice. The reason Hono was chosen over Fastify is that Fastify runs only in Node JS while Hono supports multiple runtimes. Recent trends suggest that the server-side JS ecosystem is changing rapidly and other runtimes can be beneficial. For starters, in the short term, we might decide that Deno is a better foundation.
-* **H3:** Very similar to Hono, it lacks documentation therefore while very capable the initial attempt to use it was a tad frustrating.
+* **Hono JS:** Previously chosen for its lightweight nature and flexibility, but Laravel's comprehensive feature set and rapid development capabilities proved more advantageous for the project's needs.
+* **Express.js:** A popular choice in the JavaScript ecosystem, but lacks the full-featured nature of Laravel.
+* **Fastify:** Known for its performance in the Node.js world, but doesn't offer the same level of built-in features and ecosystem as Laravel.
 
 **Impact:**
-
-Adopting Hono JS is expected to:
-
-* Improve application performance due to its lightweight nature and efficient handling of requests.
-* Enhance developer productivity by providing a clean and modern API.
-* Increase flexibility and customization options for the project.
-* Offer a wider range of deployment options thanks to its compatibility with various JavaScript runtimes.
+Adopting Laravel is expected to:
+* Accelerate development speed due to its comprehensive toolkit and features.
+* Improve application robustness with Laravel's built-in security features and best practices.
+* Enhance developer productivity by leveraging Laravel's elegant syntax and extensive documentation.
+* Provide a stable and well-supported foundation for long-term project growth.
 
 **Revision History:**
-
-* None
+* 2024-09-19: Initial decision to use Hono JS as the HTTP framework.
+* 2024-10-12: Decision revised to adopt Laravel as the web framework, replacing Hono JS.
