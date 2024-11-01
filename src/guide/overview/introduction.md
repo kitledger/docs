@@ -41,20 +41,17 @@ Kitledger is an innovative open-source framework that applies the time-tested pr
 
 ## Use Cases and Transaction Examples
 
-### 1. Carbon Accounting
-Track and manage carbon credits, emissions, and offsets across organizations.
+### 1. Loyalty Points System
+Track customer reward points and their monetary value.
 
 | Field | Value |
 |-------|--------|
-| ref_id | EMISSION-2024-001 |
-| ledger_id | carbon-accounting-main |
-| debit_account_id | facility-a-emissions |
-| credit_account_id | corporate-carbon-liability |
-| amount | 2550.00 |
-| quantity | 25.5 |
-| product_id | ghg-co2 |
-| uom_id | metric-tons |
-| dimensions | {"subsidiary": "acme-manufacturing", "location": "plant-a", "cost_center": "production", "business_unit": "polymers"} |
+| ref_id | POINTS-EARN-001 |
+| ledger_id | loyalty-program-main |
+| debit_account_id | customer-123-points |
+| credit_account_id | points-liability |
+| amount | 50.00 |
+| dimensions | {"subsidiary": "retail-div", "region": "northeast", "channel": "online"} |
 
 ### 2. International Sales (Linked Ledgers Example)
 Record a sale transaction that affects both USD and EUR ledgers with automatic currency conversion.
@@ -96,17 +93,20 @@ Track movement of materials and products through supply chain.
 | uom_id | units |
 | dimensions | {"subsidiary": "acme-logistics", "location": "warehouse-a", "business_unit": "electronics"} |
 
-### 4. Loyalty Points System
-Track customer reward points and their monetary value.
+### 4. Carbon Accounting
+Track and manage carbon credits, emissions, and offsets across organizations.
 
 | Field | Value |
 |-------|--------|
-| ref_id | POINTS-EARN-001 |
-| ledger_id | loyalty-program-main |
-| debit_account_id | customer-123-points |
-| credit_account_id | points-liability |
-| amount | 50.00 |
-| dimensions | {"subsidiary": "retail-div", "region": "northeast", "channel": "online"} |
+| ref_id | EMISSION-2024-001 |
+| ledger_id | carbon-accounting-main |
+| debit_account_id | facility-a-emissions |
+| credit_account_id | corporate-carbon-liability |
+| amount | 2550.00 |
+| quantity | 25.5 |
+| product_id | ghg-co2 |
+| uom_id | metric-tons |
+| dimensions | {"subsidiary": "acme-manufacturing", "location": "plant-a", "cost_center": "production", "business_unit": "polymers"} |
 
 ### 5. Time Banking
 Track exchange of services based on time with standard hourly rates.
