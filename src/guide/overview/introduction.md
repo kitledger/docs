@@ -1,9 +1,10 @@
-# Kitledger: Framework for Transactional Software
-*A solid foundation based on double-entry accounting principles*
+Framework for Transactional Software
 
 ## Overview
 
-Kitledger is an innovative open-source framework that applies the time-tested principles of double-entry accounting to create a universal foundation for transactional systems. By leveraging these principles beyond traditional financial accounting, Kitledger provides a robust, consistent, and auditable transaction processing system for a wide range of applications.
+In a society that has become increasingly more transactional, we need systems that can process operations reliably at scale, while remaining highly auditable and flexible but without becoming incomprehensible giant monoliths that are had to maintain and evolve. 
+
+Double entry accounting provides a solid structure on top of which a set of sophisticated software tools can be crafted that implement this ideas.
 
 ## Core Benefits
 
@@ -39,7 +40,7 @@ Kitledger is an innovative open-source framework that applies the time-tested pr
    - Comprehensive SDK support
    - RESTful API interface
 
-## Use Cases and Transaction Examples
+## Use Cases
 
 ### 1. Loyalty Points System
 Track customer reward points and their monetary value.
@@ -54,7 +55,7 @@ Track customer reward points and their monetary value.
 | dimensions | {"subsidiary": "retail-div", "region": "northeast", "channel": "online"} |
 
 ### 2. International Sales (Linked Ledgers Example)
-Record a sale transaction that affects both USD and EUR ledgers with automatic currency conversion.
+Store a sale transaction that affects both USD and EUR ledgers with automatic currency conversion.
 
 Transaction in EUR Ledger:
 | Field | Value |
@@ -238,7 +239,3 @@ Track billable hours and project costs.
 6. **Units of Measurement**
    - Standardized unit tracking
    - Conversion support
-
-## Conclusion
-
-Kitledger provides a robust foundation for building transactional systems across diverse domains. Its double-entry architecture ensures data integrity while maintaining the flexibility needed for modern applications. Whether tracking carbon credits, digital assets, or traditional inventory, Kitledger's unified approach simplifies development while enforcing strict consistency requirements.
