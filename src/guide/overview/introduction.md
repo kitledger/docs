@@ -52,12 +52,13 @@ Track customer reward points and their monetary value.
 | debit_account_id | customer-123-points |
 | credit_account_id | points-liability |
 | amount | 50.00 |
-| dimensions | {"subsidiary": "retail-div", "region": "northeast", "channel": "online"} |
+| dimensions | `{"subsidiary": "retail-div", "region": "northeast", "channel": "online"}` |
 
 ### 2. International Sales (Linked Ledgers Example)
 Store a sale transaction that affects both USD and EUR ledgers with automatic currency conversion.
 
-Transaction in EUR Ledger:
+EUR Ledger Entry:
+
 | Field | Value |
 |-------|--------|
 | ref_id | SALE-2024-001-EUR |
@@ -66,9 +67,10 @@ Transaction in EUR Ledger:
 | credit_account_id | sales-revenue-eur |
 | amount | 100000.00 |
 | linked_ref | SALE-2024-001-USD |
-| dimensions | {"subsidiary": "acme-europe", "region": "eu", "business_unit": "enterprise"} |
+| dimensions | `{"subsidiary": "acme-europe", "region": "eu", "business_unit": "enterprise"}` |
 
-Corresponding USD Ledger Entry:
+USD Ledger Entry:
+
 | Field | Value |
 |-------|--------|
 | ref_id | SALE-2024-001-USD |
@@ -77,7 +79,7 @@ Corresponding USD Ledger Entry:
 | credit_account_id | sales-revenue-usd |
 | amount | 108500.00 |
 | linked_ref | SALE-2024-001-EUR |
-| dimensions | {"subsidiary": "acme-europe", "region": "eu", "business_unit": "enterprise"} |
+| dimensions | `{"subsidiary": "acme-europe", "region": "eu", "business_unit": "enterprise"}` |
 
 ### 3. Supply Chain Inventory
 Track movement of materials and products through supply chain.
@@ -92,7 +94,7 @@ Track movement of materials and products through supply chain.
 | quantity | 1000 |
 | product_id | widget-sku-123 |
 | uom_id | units |
-| dimensions | {"subsidiary": "acme-logistics", "location": "warehouse-a", "business_unit": "electronics"} |
+| dimensions | `{"subsidiary": "acme-logistics", "location": "warehouse-a", "business_unit": "electronics"}` |
 
 ### 4. Carbon Accounting
 Track and manage carbon credits, emissions, and offsets across organizations.
@@ -107,7 +109,7 @@ Track and manage carbon credits, emissions, and offsets across organizations.
 | quantity | 25.5 |
 | product_id | ghg-co2 |
 | uom_id | metric-tons |
-| dimensions | {"subsidiary": "acme-manufacturing", "location": "plant-a", "cost_center": "production", "business_unit": "polymers"} |
+| dimensions | `{"subsidiary": "acme-manufacturing", "location": "plant-a", "cost_center": "production", "business_unit": "polymers"}` |
 
 ### 5. Time Banking
 Track exchange of services based on time with standard hourly rates.
@@ -119,7 +121,7 @@ Track exchange of services based on time with standard hourly rates.
 | debit_account_id | recipient-john-doe |
 | credit_account_id | provider-jane-smith |
 | amount | 75.00 |
-| dimensions | {"location": "portland", "region": "northwest", "project": "community-services"} |
+| dimensions | `{"location": "portland", "region": "northwest", "project": "community-services"}` |
 
 ### 6. Document Version Control
 Track document revisions and associated costs.
@@ -131,7 +133,7 @@ Track document revisions and associated costs.
 | debit_account_id | current-version |
 | credit_account_id | version-history |
 | amount | 250.00 |
-| dimensions | {"department": "legal", "cost_center": "compliance", "project": "contract-revision"} |
+| dimensions | `{"department": "legal", "cost_center": "compliance", "project": "contract-revision"}` |
 
 ### 7. Healthcare Resource Management
 Track medical supplies and equipment usage.
@@ -146,7 +148,7 @@ Track medical supplies and equipment usage.
 | quantity | 50 |
 | product_id | surgical-masks-n95 |
 | uom_id | units |
-| dimensions | {"subsidiary": "metro-healthcare", "location": "main-campus", "department": "surgery"} |
+| dimensions | `{"subsidiary": "metro-healthcare", "location": "main-campus", "department": "surgery"}` |
 
 ### 8. Cloud Resource Usage
 Track cloud computing costs.
@@ -158,7 +160,7 @@ Track cloud computing costs.
 | debit_account_id | project-a-consumption |
 | credit_account_id | available-resources |
 | amount | 96.00 |
-| dimensions | {"cost_center": "it-ops", "project": "data-analytics", "business_unit": "research"} |
+| dimensions | `{"cost_center": "it-ops", "project": "data-analytics", "business_unit": "research"}` |
 
 ### 9. Water Rights Management
 Track water allocation and associated costs.
@@ -170,7 +172,7 @@ Track water allocation and associated costs.
 | debit_account_id | farm-a-allocation |
 | credit_account_id | river-basin-available |
 | amount | 5000.00 |
-| dimensions | {"region": "colorado-basin", "business_unit": "agriculture", "project": "irrigation"} |
+| dimensions | `{"region": "colorado-basin", "business_unit": "agriculture", "project": "irrigation"}` |
 
 ### 10. Software License Management
 Track software license costs and allocations.
@@ -182,7 +184,7 @@ Track software license costs and allocations.
 | debit_account_id | engineering-dept |
 | credit_account_id | license-pool |
 | amount | 3000.00 |
-| dimensions | {"department": "engineering", "cost_center": "development", "location": "hq"} |
+| dimensions | `{"department": "engineering", "cost_center": "development", "location": "hq"}` |
 
 ### 11. Carbon Offset Trading
 Track carbon offset credit trades and their monetary value.
@@ -194,7 +196,7 @@ Track carbon offset credit trades and their monetary value.
 | debit_account_id | buyer-portfolio |
 | credit_account_id | seller-portfolio |
 | amount | 25000.00 |
-| dimensions | {"subsidiary": "green-investments", "region": "latam", "project": "reforestation"} |
+| dimensions | `{"subsidiary": "green-investments", "region": "latam", "project": "reforestation"}` |
 
 ### 12. Employee Time Allocation
 Track billable hours and project costs.
@@ -206,7 +208,7 @@ Track billable hours and project costs.
 | debit_account_id | project-x-budget |
 | credit_account_id | employee-time-pool |
 | amount | 800.00 |
-| dimensions | {"department": "engineering", "cost_center": "development", "project": "client-portal"} |
+| dimensions | `{"department": "engineering", "cost_center": "development", "project": "client-portal"}` |
 
 ## Technical Features
 
