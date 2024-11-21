@@ -41,11 +41,9 @@ export default defineConfig({
 					{ text: 'Introduction', link: '/guide/overview/introduction' },
 					{ text: 'Accounts', link: '/guide/overview/accounts' },
 					{ text: 'Batches', link: '/guide/overview/batches' },
-					{ text: 'Currencies', link: '/guide/overview/currencies' },
 					{ text: 'Entities', link: '/guide/overview/entities' },
 					{ text: 'Entries', link: '/guide/overview/entries' },
 					{ text: 'Ledgers', link: '/guide/overview/ledgers' },
-					{ text: 'Products', link: '/guide/overview/products' },
 					{ text: 'Transactions', link: '/guide/overview/transactions' },
 					{ text: 'Units', link: '/guide/overview/units' },
 				]
