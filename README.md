@@ -12,25 +12,14 @@ KitLedger provides a robust foundation for building financial systems and workfl
 
 ### Core Functionality
 - **Double-Entry Accounting Engine**: Built-in safeguards ensure transactional consistency
-- **Flexible Schema Design**: Define custom entity types and transaction templates
+- **Flexible Schema Design**: Define custom entity models, transaction models and ledgers
 - **Real-time Event Stream**: Subscribe to ledger changes for immediate processing
-- **Rich Query API**: Powerful filtering and aggregation capabilities
+- **Analytics Engine**: Secondary database specialized for reporting with full SQL support
 
 ### Developer Experience
-- **TypeScript/PHP SDK**: First-class support for modern development workflows
-- **Auto-generated API Documentation**: OpenAPI specifications that stay in sync with your schema
-- **Local Development Environment**: Deno-based CLI for rapid prototyping
+- **TypeScript SDK**: First-class support for modern development workflows
+- **Other Languages**: SDKs coming soon
 - **Extensive Testing Tools**: Helper libraries for writing integration tests
-
-### Enterprise Ready
-- **AWS Integration**: 
-  - Native support for AWS services (DynamoDB, EventBridge, Lambda)
-  - Simple deployment using CloudFormation/CDK
-  - Multi-region replication options
-- **Security**: 
-  - Fine-grained access control
-  - Audit logging
-  - Encryption at rest and in transit
 
 ## Use Cases
 
@@ -40,49 +29,6 @@ KitLedger provides a robust foundation for building financial systems and workfl
 - **Billing Systems**: Complex pricing and usage-based billing
 - **Gaming Economies**: Virtual currency and item trading systems
 - **Carbon Credit Trading**: Track environmental offset transactions
-
-## Getting Started
-
-```bash
-# Install the CLI
-deno install -A -n kitledger https://deno.land/x/kitledger/cli.ts
-
-# Initialize a new project
-kitledger init my-project
-
-# Start the local development server
-kitledger dev
-```
-
-Visit the [documentation](https://kitledger.dev/docs) for detailed setup instructions and tutorials.
-
-## Deployment
-
-### AWS (Recommended)
-```bash
-# Configure AWS credentials
-aws configure
-
-# Deploy to your AWS account
-kitledger deploy --aws
-```
-
-### Self-hosted
-```bash
-# Build Docker images
-docker compose build
-
-# Start services
-docker compose up -d
-```
-
-## Documentation
-
-- [Getting Started Guide](https://kitledger.dev/guide/getting-started)
-- [Core Concepts](https://kitledger.dev/guide/concepts)
-- [API Reference](https://kitledger.dev/api)
-- [SDK Documentation](https://kitledger.dev/sdk)
-- [Deployment Guide](https://kitledger.dev/guide/deployment)
 
 ## Contributing
 
