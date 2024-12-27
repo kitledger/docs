@@ -3,9 +3,3 @@
 
 # MacOS
 .DS_Store
-
-# Vitepress Dist
-.vitepress/dist
-
-#Dependencies
-node_modules
