@@ -2,9 +2,9 @@
 pageType: home
 
 hero:
-  name: My Site
-  text: A cool website!
-  tagline: This is the tagline
+  name: Programmable
+  text: Accounting Engine
+  tagline: This site contains Guides and Tutorials for using Kitledger
   actions:
     - theme: brand
       text: Quick Start
@@ -12,9 +12,6 @@ hero:
     - theme: alt
       text: GitHub
       link: https://github.com/web-infra-dev/rspress
-  image:
-    src: /rspress-icon.png
-    alt: Logo
 features:
   - title: Blazing fast build speed
     details: The core compilation module is based on the Rust front-end toolchain, providing a more ultimate development experience.

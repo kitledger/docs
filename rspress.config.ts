@@ -4,11 +4,12 @@ import { defineConfig } from 'rspress/config';
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
   title: 'Kitledger Documentation',
-  icon: '/rspress-icon.png',
+  icon: '/icon.png',
   logo: {
-    light: '/rspress-light-logo.png',
-    dark: '/rspress-dark-logo.png',
+    light: '/logo.png',
+    dark: '/logo-wt.png',
   },
+  globalStyles: path.join(__dirname, 'theme/index.css'),
   themeConfig: {
     socialLinks: [
       {
