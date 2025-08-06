@@ -3,16 +3,16 @@
 layout: home
 
 hero:
-  name: "Kitledger Docs"
+  name: "Kitledger"
   text: "Programmable Accounting Ledger"
-  tagline: My great project tagline
+  tagline: Create business management systems based on Double Entry Accounting
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Getting Started
+      link: /01-getting-started/quickstart
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Github
+      link: https://github.com/kitledger/kitledger
 
 features:
   - title: Feature A
