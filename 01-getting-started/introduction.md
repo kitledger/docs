@@ -1,85 +1,30 @@
-# Markdown Extension Examples
+# Kitledger
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+Kitledger is a framework for building transactional software based on double entry accounting.
 
-## Syntax Highlighting
+## Is it an ERP?
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+No, Kitledger is not an ERP. Instead it is a fantastic tool to use if you are looking to craft a customized ERP system for your business.
 
-**Input**
+However building an ERP system, even with great tooling, is a massive undertaking and as such Kitledger is not limited to *only* building ERP systems but rather any kind of system that benefits for double entry accounting principles.
 
-````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-````
+In fact, the most valuable way to use Kitledger as a complement to an organization's existing ERP system by providing transactional structure to departments and business processes that might not be at a given point in time, properly supported by the main platform.
 
-**Output**
+## Use Cases
 
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-
-## Custom Containers
-
-**Input**
-
-```md
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-```
-
-**Output**
-
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-
-## More
-
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+* Bookeeping
+* Inventory Management Systems
+* Cost Accruals
+* Project Billing Systems
+* Budgetting and Financial Planning
+* Financing, Loan and Factoring systems
+* Resource Allocation
+* Time Tracking
+* Reward Systems
+* Game Currencies
+* Grants and Donations
+* Performance Measurement
+* Consumption/Usage Based Billing
+* Energy Consumption, Production and Allocation
+* Employee Vacations and Benefits
+* Sales Quotas and Commissions

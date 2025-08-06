@@ -11,8 +11,8 @@ hero:
       text: Getting Started
       link: /01-getting-started/quickstart
     - theme: alt
-      text: Github
-      link: https://github.com/kitledger/kitledger
+      text: Introduction
+      link: /01-getting-started/introduction
 
 features:
   - title: Feature A
