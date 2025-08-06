@@ -1,8 +1,0 @@
-:root {
-	--rp-c-brand: #22C55E; /* hsl(204deg 100% 50%) */
-	--rp-c-brand-light: #4ade80; /* hsl(204deg 100% 60%) */
-	--rp-c-brand-lighter: #86efac; /* hsl(204deg 100% 70%) */
-	--rp-c-brand-dark: #16a34a; /* hsl(212deg 100% 50%) */
-	--rp-c-brand-darker: #15803d; /* hsl(212deg 100% 40%) */
-	--rp-c-brand-tint: rgba(127, 163, 255, 0.16);
-}
