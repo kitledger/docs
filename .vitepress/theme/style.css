@@ -1,0 +1,35 @@
+/* 1. Import your fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+	--vp-c-green-1: #22C55E;
+	--vp-c-green-2: #134e4a;
+	--vp-c-green-3: #15803d;
+	--vp-c-green-soft: #042F2E;
+	--vp-c-brand-1: var(--vp-c-green-1);
+	--vp-c-brand-2: var(--vp-c-green-2);
+	--vp-c-brand-3: var(--vp-c-green-3);
+	--vp-c-brand-soft: var(--vp-c-green-soft);
+	--vp-font-family-base: "IBM Plex Sans", sans-serif; /* base font */
+	--vp-font-family-mono: "IBM Plex Mono", monospace; /* monospace font */
+
+	--vp-c-bg: #ffffff;
+	--vp-c-bg-alt: #f6f6f7;
+	--vp-c-bg-elv: #ffffff;
+	--vp-c-bg-soft: #f6f6f7;
+
+	--vp-c-border: #c2c2c4;
+	--vp-c-divider: #e2e2e3;
+	--vp-c-gutter: #e2e2e3;
+}
+
+.dark {
+	--vp-c-bg: #021F1E;
+	--vp-c-bg-alt: #042F2E;
+	--vp-c-bg-elv: #134e4a;
+	--vp-c-bg-soft: #134e4a;
+
+	--vp-c-border: #134e4a;
+	--vp-c-divider: #134e4a;
+	--vp-c-gutter: #134e4a;
+}

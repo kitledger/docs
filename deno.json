@@ -1,4 +1,12 @@
 {
+	"fmt": {
+		"useTabs": true,
+		"lineWidth": 120,
+		"indentWidth": 4,
+		"semiColons": true,
+		"singleQuote": false,
+		"include": [".vitepress/**/*.mts"]
+	},
 	"imports": {
 		"vitepress": "npm:vitepress@^1.6.4",
 		"vue": "npm:vue@^3.5.18"
@@ -7,6 +15,7 @@
 	"tasks": {
 		"docs:dev": "deno run -A npm:vitepress dev",
 		"docs:build": "deno run -A npm:vitepress build",
-		"docs:preview": "deno run -A npm:vitepress preview"
+		"docs:preview": "deno run -A npm:vitepress preview",
+		"format": "deno fmt"
 	}
 }
