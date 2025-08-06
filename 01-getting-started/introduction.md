@@ -56,7 +56,7 @@ Essentially, by taking the opposite stance of *not making any decisions for you*
 
 ## What are these fundamental building blocks?
 
-1) **The Ledger:** Kitledger brings the [ACID]('https://en.wikipedia.org/wiki/ACID') guarantees from database design into a double entry ledger that makes no assumptions about what types of accounts you operate with, what kinds of transactions you use or what data properties lie within these accounts. It is designed to guarantee transactional consistency by debiting and crediting accounts as instructed without risk of unbalanced accounts.
+1) **The Ledger:** Kitledger brings the [ACID](https://en.wikipedia.org/wiki/ACID) guarantees from database design into a double entry ledger that makes no assumptions about what types of accounts you operate with, what kinds of transactions you use or what data properties lie within these accounts. It is designed to guarantee transactional consistency by debiting and crediting accounts as instructed without risk of unbalanced accounts.
 
 2) **The Data Model:** Kitledger pairs double entry accounting with a "schemaless" data model that revolves around three main concepts: Transactions, Entities and Units. Where Kitledger by default has no understanding of what these transactions actually are (Could be invoices, payments, time entries), what types of entities are involved (Employees, Players, Services, Pilots, Doctors) and what types of Units are exchanged in them (Could be currencies, units, crates, packages, licenses). The user is expected to define what each of these represent in their instance by setting up Transaction Models, Entity Models and Unit Models.
 
