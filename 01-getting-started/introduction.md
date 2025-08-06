@@ -8,7 +8,7 @@ No, Kitledger is not an ERP. Instead it is a fantastic tool to use if you are lo
 
 However building an ERP system, even with great tooling, is a massive undertaking and as such Kitledger is not limited to *only* building ERP systems but rather any kind of system that benefits for double entry accounting principles.
 
-In fact, the most valuable way to use Kitledger as a complement to an organization's existing ERP system by providing transactional structure to departments and business processes that might not be at a given point in time, properly supported by the main platform.
+In fact, the most valuable way to use Kitledger is as a complement to an organization's existing ERP system by providing transactional structure to departments and business processes that might not be, at a given point in time, properly supported by the main ERP platform.
 
 ## Use Cases
 
@@ -35,7 +35,7 @@ In order to address this question, we first need to understand what makes most b
 
 Most transactional systems are designed to solve particular problems in the way in which the system creators intended, meaning, the creator's opinions are embedded in how the system performs it's task. This is fine as long as the opinions of the system creators are aligned with how the user is expecting the problem to be solved or with the business process defined by the organization. 
 
-The examples sound straight forward in theory, for instance, an Order to Cash process from an existing ERP system can be as:
+The examples sound straight forward in theory, for instance, an Order to Cash process from an existing ERP system can be as simple as:
 
 * Enter a Quote
 * From the Quote, create a Sales Order
@@ -46,7 +46,7 @@ In practice, however, even very similar companies often have very different busi
 
 1) **The user adapts to the system:** A very common one. The user follows the "best practices" of the system, leaves aside the alternative "company specific" process in favor of the standard system based one. This is often a "lesser of two evils" type of situation given that the user by this point has a significant time and money investment into the existing system and thus the idea of using the most out of it is justified. Results of this scenario are mixed and highly contextual.
 
-2) **The system adapts to the user:** This one is less common mainly due to the fact that many systems simply do not have the ability to adapt at all to a change in process (Even though Sales Reps claim their product can "totally adapt to the organization"). Commonly, only high end business management software has the kind of advanced features that can allow this type of adaptation via customization and even then, certain challenges and limitations often appear. That said on average this scenario more often than not leads to the user being able to perform their task following the organization's preferred process and while this can be a double-edged sword, it's certainly more familiar and comfortable to the user. 
+2) **The system adapts to the user:** This one is less common mainly due to the fact that many systems simply do not have the ability to adapt at all to a change in process (Even though Sales Reps claim their product can "totally adapt to the organization"). Commonly, only high end business management software has the kind of advanced features that can allow this type of adaptation via customization and even then, certain challenges and limitations often appear. That said, on average, this scenario more often than not leads to the user being able to perform their task following the organization's preferred process and while this can be a double-edged sword, it's certainly more familiar and comfortable to the user. 
 
 3) **The user bridges the gap with extra tools:** The most common scenario by far, brings additional tools into the process (Ahem! "Spreadhseets") as a last resort patch. While common, this often leads to fragile, complex business processes that are not well documented or depend on several disjointed tools without a clear guideline.
 
