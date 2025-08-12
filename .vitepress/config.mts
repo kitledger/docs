@@ -22,7 +22,9 @@ export default defineConfig({
 			{ text: "Console", link: "https://console.kitledger.com" },
 			{ text: "Discussions", link: "https://github.com/orgs/kitledger/discussions" },
 		],
-
+		search: {
+			provider: "local"
+		},
 		sidebar: [
 			{
 				text: "Getting Started",
@@ -59,7 +61,7 @@ export default defineConfig({
 					{ text: "Configuration", link: "/04-reference/configuration" },
 					{ text: "Python Reference", link: "/04-reference/python-reference" },
 					{ text: "WASM Reference", link: "/04-reference/wasm-reference" },
-					{ text: "API Reference", link: "/04-reference/api-reference" },
+					{ text: "API Reference", link: "https://documenter.getpostman.com/view/6191973/2sAXqv4fcj" },
 					{ text: "CLI Reference", link: "/04-reference/cli-reference" },
 				],
 			},
