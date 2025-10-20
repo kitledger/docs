@@ -1,7 +1,7 @@
 # Summary
 
 - [Introduction](introduction/index.md)
-	- [Ecosystem Ovverview](introduction/ecosystem.md)
+	- [Ecosystem Overview](introduction/ecosystem.md)
 - [Getting Started](getting-started/index.md)
 - [Concepts](concepts/index.md)
 	- [Ledger](concepts/ledger.md)
