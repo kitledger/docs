@@ -1,0 +1,35 @@
+:root {
+  /*
+   * Theme Colors: Based on Main: #22C55E (Vibrant Green)
+   * This is used for links, active sidebar states, and primary buttons.
+   */
+  --rp-c-brand: #22C55E;
+  
+  /* Slightly darker for hover states/active links in dark mode */
+  --rp-c-brand-dark: #1D9B4D;
+  
+  /* Even darker for active clicks/subtle details */
+  --rp-c-brand-darker: #187A3D;
+  
+  /* Lighter for subtle backgrounds or outlines */
+  --rp-c-brand-light: #49D178;
+  --rp-c-brand-lighter: #49D178;
+
+  /*
+   * Layout Variables
+   * Keeping the original widths for standard desktop layout.
+   */
+  --rp-sidebar-width: 280px;
+  --rp-aside-width: 256px;
+
+  /*
+   * Code Block Backgrounds
+   * Using rgba variations of the main brand color (34, 197, 94) for a cohesive look.
+   */
+  
+  /* Background for the code block file/title header (20% opacity) */
+  --rp-code-title-bg: rgba(34, 197, 94, 0.2);
+  
+  /* Very subtle background for the code block content (5% opacity) */
+  --rp-code-block-bg: rgba(34, 197, 94, 0.05);
+}
