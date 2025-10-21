@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Kitledger Docs",
   description: "Programmable Accounting Ledger",
-  srcDir: "./content",
+  srcDir: "content",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

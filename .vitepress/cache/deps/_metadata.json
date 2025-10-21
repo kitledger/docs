@@ -1,31 +1,31 @@
 {
-  "hash": "745d081c",
-  "configHash": "76741036",
+  "hash": "8b178a3f",
+  "configHash": "6365751b",
   "lockfileHash": "e3b0c442",
-  "browserHash": "0bbb953f",
+  "browserHash": "6c0f8d48",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/.deno/vue@3.5.22/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "7a33d9ec",
+      "fileHash": "b647f996",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/.deno/@vue+devtools-api@8.0.3/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "38a7ad6a",
+      "fileHash": "70369358",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/.deno/@vueuse+core@13.9.0/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "b2879d5a",
+      "fileHash": "c1a7081c",
       "needsInterop": false
     },
     "@theme/index": {
       "src": "../../../node_modules/.deno/vitepress@1.6.4/node_modules/vitepress/dist/client/theme-default/index.js",
       "file": "@theme_index.js",
-      "fileHash": "ae0ec883",
+      "fileHash": "dc6539d5",
       "needsInterop": false
     }
   },
