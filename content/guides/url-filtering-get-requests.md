@@ -2,14 +2,14 @@
 
 For simple, readable `GET` requests, Kitledger provides a powerful URL-based filtering system. Instead of a complex JSON object, you use standard URL query parameters.
 
-This method is ideal for quick lookups, simple filtering, and cacheable API calls. For highly complex queries (like nested `OR` groups), use the [Kitledger Query Object](#) with a `POST` request.
+This method is ideal for quick lookups, simple filtering, and cacheable API calls. For highly complex queries (like nested `OR` groups), use the [Kitledger Query Object](/guides/writing-queries) with a `POST` request.
 
 ## The Basics
 
 The parser works by identifying two types of parameters:
 
-1.  **Reserved Parameters:** Keys like `select`, `orderBy`, `limit`, etc., that control the query structure.
-2.  **Filter Parameters:** *All other keys* are automatically treated as `WHERE` clauses.
+1. **Reserved Parameters:** Keys like `select`, `orderBy`, `limit`, etc., that control the query structure.
+2. **Filter Parameters:** *All other keys* are automatically treated as `WHERE` clauses.
 
 ### Reserved Parameters
 
@@ -17,9 +17,9 @@ Here are the reserved keys and their syntax:
 
 | Parameter | Syntax | Example |
 | :--- | :--- | :--- |
-| **`select`** | `select=column` <br> `select=column:alias` <br> `select=func(col):alias` | `?select=name&select=id:account_id&select=count(id):total` |
+| **`select`** | `select=column` `select=column:alias` `select=func(col):alias` | `?select=name&select=id:account_id&select=count(id):total` |
 | **`orderBy`** | `orderBy=column.direction` | `?orderBy=name.asc&orderBy=created_at.desc` (direction defaults to `asc`) |
-| **`join`** | `join=type:table:onLeft:onRight` <br> `join=type:table:as:onLeft:onRight` | `?join=left:profiles:p:users.id:p.user_id` |
+| **`join`** | `join=type:table:onLeft:onRight` `join=type:table:as:onLeft:onRight` | `?join=left:profiles:p:users.id:p.user_id` |
 | **`limit`** | `limit=number` | `?limit=25` |
 | **`offset`** | `offset=number` | `?offset=50` |
 | **`groupBy`** | `groupBy=column` | `?groupBy=type&groupBy=status` |
@@ -64,7 +64,7 @@ If you need to combine your main filters with **`OR`**, you can specify the `con
 `?status=equal:active&balance=gt:100&connector=or`
 *Translates to:* `WHERE status = 'active' OR balance > 100`
 
-**Note:** This "flat" parser only supports a single top-level connector. For nested logic (e.g., `(A AND B) OR (C AND D)`), you must use the full [Kitledger Query Object](#).
+**Note:** This "flat" parser only supports a single top-level connector. For nested logic (e.g., `(A AND B) OR (C AND D)`), you must use the full [Kitledger Query Object](/guides/writing-queries).
 
 ## Full Example URL
 
@@ -74,7 +74,7 @@ Here is a `GET` request that uses multiple features of the URL parser:
 
 This query will:
 
-1.  **Select** the `id` and `name` columns.
-2.  **Filter** for records where `status` is 'active' **AND** `balance` is greater than 0.
-3.  **Order** the results by `created_at` in descending order.
-4.  **Limit** the result to 10 records.
+1. **Select** the `id` and `name` columns.
+2. **Filter** for records where `status` is 'active' **AND** `balance` is greater than 0.
+3. **Order** the results by `created_at` in descending order.
+4. **Limit** the result to 10 records.

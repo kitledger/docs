@@ -8,10 +8,10 @@ Here are the basic properties of a Kitledger Query Object:
 
 An array that specifies which columns to return. It accepts three formats:
 
-  * **Simple string:** `"column_name"`
-  * **Object with alias:** `{ "column": "accounts.id", "as": "account_id" }`
-  * **Aggregate function:** `{ "func": "count", "column": "id", "as": "total_count" }`
-      * Valid functions are: `count`, `sum`, `avg`, `min`, `max`.
+* **Simple string:** `"column_name"`
+* **Object with alias:** `{ "column": "accounts.id", "as": "account_id" }`
+* **Aggregate function:** `{ "func": "count", "column": "id", "as": "total_count" }`
+  * Valid functions are: `count`, `sum`, `avg`, `min`, `max`.
 
 <!-- end list -->
 
@@ -27,11 +27,11 @@ An array that specifies which columns to return. It accepts three formats:
 
 An optional array of objects defining how to join other tables.
 
-  * **`type`**: The SQL join type (`inner`, `left`, `right`, `full_outer`).
-  * **`table`**: The table to join.
-  * **`as`**: (Optional) An alias for the joined table.
-  * **`onLeft`**: The "left" side of the `ON` clause (e.g., `primary_table.foreign_key`).
-  * **`onRight`**: The "right" side of the `ON` clause (e.g., `alias.id`).
+* **`type`**: The SQL join type (`inner`, `left`, `right`, `full_outer`).
+* **`table`**: The table to join.
+* **`as`**: (Optional) An alias for the joined table.
+* **`onLeft`**: The "left" side of the `ON` clause (e.g., `primary_table.foreign_key`).
+* **`onRight`**: The "right" side of the `ON` clause (e.g., `alias.id`).
 
 <!-- end list -->
 
@@ -51,14 +51,14 @@ An optional array of objects defining how to join other tables.
 
 An array of `ConditionGroup` objects. This allows for building complex `AND`/`OR` logic. A `ConditionGroup` has two properties:
 
-  * **`connector`**: How the conditions are joined (`and` or `or`).
-  * **`conditions`**: An array of `Condition` objects or nested `ConditionGroup` objects.
+* **`connector`**: How the conditions are joined (`and` or `or`).
+* **`conditions`**: An array of `Condition` objects or nested `ConditionGroup` objects.
 
 A `Condition` object has three properties:
 
-  * **`column`**: The column to filter on.
-  * **`operator`**: The comparison operator (e.g., `equal`, `gt`, `like`, `in`, `not_empty`).
-  * **`value`**: The value to compare against.
+* **`column`**: The column to filter on.
+* **`operator`**: The comparison operator (e.g., `equal`, `gt`, `like`, `in`, `not_empty`).
+* **`value`**: The value to compare against.
 
 <!-- end list -->
 
@@ -85,8 +85,8 @@ A `Condition` object has three properties:
 
 An optional array of objects to sort the results.
 
-  * **`column`**: The column to sort by.
-  * **`direction`**: `asc` (ascending) or `desc` (descending).
+* **`column`**: The column to sort by.
+* **`direction`**: `asc` (ascending) or `desc` (descending).
 
 <!-- end list -->
 
@@ -109,8 +109,8 @@ An optional array of column names to group results by, typically used with aggre
 
 Optional numbers used for pagination.
 
-  * **`limit`**: The maximum number of records to return.
-  * **`offset`**: The number of records to skip.
+* **`limit`**: The maximum number of records to return.
+* **`offset`**: The number of records to skip.
 
 <!-- end list -->
 
