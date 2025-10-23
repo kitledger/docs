@@ -23,8 +23,6 @@ An array that specifies which columns to return. It accepts three formats:
 ]
 ```
 
------
-
 ## `joins`
 
 An optional array of objects defining how to join other tables.
@@ -48,8 +46,6 @@ An optional array of objects defining how to join other tables.
   }
 ]
 ```
-
------
 
 ## `where`
 
@@ -85,8 +81,6 @@ A `Condition` object has three properties:
 ]
 ```
 
------
-
 ## `orderBy`
 
 An optional array of objects to sort the results.
@@ -103,8 +97,6 @@ An optional array of objects to sort the results.
 ]
 ```
 
------
-
 ## `groupBy`
 
 An optional array of column names to group results by, typically used with aggregate functions.
@@ -112,8 +104,6 @@ An optional array of column names to group results by, typically used with aggre
 ```json
 "groupBy": ["accounts.type"]
 ```
-
------
 
 ## `limit` & `offset`
 
@@ -128,8 +118,6 @@ Optional numbers used for pagination.
 "limit": 50,
 "offset": 0
 ```
-
------
 
 ## Full Example
 

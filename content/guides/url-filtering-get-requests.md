@@ -4,16 +4,12 @@ For simple, readable `GET` requests, Kitledger provides a powerful URL-based fil
 
 This method is ideal for quick lookups, simple filtering, and cacheable API calls. For highly complex queries (like nested `OR` groups), use the [Kitledger Query Object](#) with a `POST` request.
 
------
-
 ## The Basics
 
 The parser works by identifying two types of parameters:
 
 1.  **Reserved Parameters:** Keys like `select`, `orderBy`, `limit`, etc., that control the query structure.
 2.  **Filter Parameters:** *All other keys* are automatically treated as `WHERE` clauses.
-
------
 
 ### Reserved Parameters
 
@@ -27,8 +23,6 @@ Here are the reserved keys and their syntax:
 | **`limit`** | `limit=number` | `?limit=25` |
 | **`offset`** | `offset=number` | `?offset=50` |
 | **`groupBy`** | `groupBy=column` | `?groupBy=type&groupBy=status` |
-
------
 
 ## Filtering with `where` Clauses
 
@@ -58,8 +52,6 @@ You must use the full operator name, which maps directly to the Kitledger schema
 | **`empty`** | `boolean` | `?parent_id=empty:true` (finds `NULL` values) |
 | **`not_empty`**| `boolean` | `?parent_id=not_empty:true` (finds non-`NULL` values) |
 
------
-
 ## Combining Filters (`AND` vs. `OR`)
 
 By default, all filter parameters are combined with **`AND`**.
@@ -73,8 +65,6 @@ If you need to combine your main filters with **`OR`**, you can specify the `con
 *Translates to:* `WHERE status = 'active' OR balance > 100`
 
 **Note:** This "flat" parser only supports a single top-level connector. For nested logic (e.g., `(A AND B) OR (C AND D)`), you must use the full [Kitledger Query Object](#).
-
------
 
 ## Full Example URL
 
